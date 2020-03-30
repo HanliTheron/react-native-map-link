@@ -141,6 +141,7 @@ export default class Popup extends React.Component {
             <ActivityIndicator style={[styles.activityIndicatorContainer, this.props.style.activityIndicatorContainer]}/>
           ) : this._renderApps()}
           {this._renderCancelButton()}
+          {this.props.children}
         </View>
       </Modal>
     )
